@@ -50,12 +50,12 @@ class SecurityTokensController extends SecurityAppController {
 		list($Event->break, $Event->breakOn) = array(true, false);
 		$result = $this->triggerEvent($Event);
 		if (false === $result || !$result = $this->{$this->modelClass}->check($token)) {
-			return $this->flash('view.fail');
+			return $this->alert('view.fail');
 		}
 
 		$this->triggerEvent('Controller.SecurityTokens.afterCheck', $this, $result);
 
-		$this->flash('security_tokens.check.success', (array) $result[$this->{$this->modelClass}->alias]['foreign_flash']);
+		$this->alert('security_tokens.check.success', (array) $result[$this->{$this->modelClass}->alias]['foreign_flash']);
 	}
 
 /**

@@ -42,7 +42,7 @@ class SecurityEventListener implements CakeEventListener {
  * @return void
  */
 	public function controllerConstructClasses(CakeEvent $Event) {
-		$Event->result = Hash::merge((array) $Event->result, array('flashMessages' => array(
+		$Event->result = Hash::merge((array) $Event->result, array('alertMessages' => array(
 			'security_tokens.check.success' => array(
 				'message' => __d('security', "Token approved."),
 				'redirect' => true,
