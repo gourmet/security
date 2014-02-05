@@ -68,7 +68,7 @@ class SecurityToken extends SecurityAppModel {
 /**
  * {@inheritdoc}
  */
-	public function beforeValidate() {
+	public function beforeValidate($options = array()) {
 		if (empty($this->data[$this->alias]['token'])) {
 			$this->data[$this->alias]['token'] = $this->generate();
 		}
