@@ -3,7 +3,7 @@
  * AccessLimitFixture
  *
  */
-class AccessLimitFixture extends CakeTestFixture {
+class AccessLimitFixture extends CommonTestFixture {
 
 /**
  * {@inheritdoc}
@@ -12,8 +12,8 @@ class AccessLimitFixture extends CakeTestFixture {
 		'id' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36, 'key' => 'primary'),
 		'aro' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36),
 		'aco' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36),
-		'aroid' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36),
-		'acoid' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36),
+		'aroid' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 36),
+		'acoid' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 36),
 		'expires' => array('type' => 'datetime', 'null' => false, 'default' => NULL),
 		'created' => array('type' => 'datetime', 'null' => false, 'default' => NULL),
 		'indexes' => array(

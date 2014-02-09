@@ -3,7 +3,7 @@
  * SecurityTokenFixture
  *
  */
-class SecurityTokenFixture extends CakeTestFixture {
+class SecurityTokenFixture extends CommonTestFixture {
 
 /**
  * {@inheritdoc}
@@ -12,7 +12,7 @@ class SecurityTokenFixture extends CakeTestFixture {
 		'id' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36, 'key' => 'primary'),
 		'token' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 64),
 		'foreign_model' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 32),
-		'foreign_key' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36),
+		'foreign_key' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 36),
 		'foreign_data' => array('type' => 'text', 'null' => true, 'default' => NULL),
 		'foreign_flash' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 255),
 		'foreign_field' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 255),
