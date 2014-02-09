@@ -133,7 +133,7 @@ class TokenizableBehavior extends ModelBehavior {
 		$this->bindSecurityToken($Model);
 
 		$token = array($Model->SecurityToken->alias => array(
-			'foreign_model' => (!empty($Model->plugin) ? $Model->plugin . '.' : '') . $Model->name,
+			'foreign_model' => $Model->className(),
 			'foreign_key' => $Model->id,
 			'foreign_data' => isset($initialState) ? $result : null,
 			'foreign_field' => null,
