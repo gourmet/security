@@ -3,7 +3,7 @@
  * SecurityTokenFixture
  *
  */
-class SecurityTokenFixture extends CakeTestFixture {
+class SecurityTokenFixture extends CommonTestFixture {
 
 /**
  * {@inheritdoc}

@@ -3,7 +3,7 @@
  * AccessLimitFixture
  *
  */
-class AccessLimitFixture extends CakeTestFixture {
+class AccessLimitFixture extends CommonTestFixture {
 
 /**
  * {@inheritdoc}
