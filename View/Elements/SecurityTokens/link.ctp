@@ -21,7 +21,7 @@ echo $this->Email->para(
 	null,
 	__d(
 		'users',
-		"If the above link is broken for you, go to:"
+		"If the above link does not work for you, copy/paste this link in your browser's address bar:"
 	)
 );
 
@@ -37,6 +37,6 @@ echo $this->Email->para(
 	null,
 	String::insert(__d(
 		'users',
-		"and manually enter your token: :token"
+		"and copy/paste this token in the form: :token"
 	), $token)
 );
